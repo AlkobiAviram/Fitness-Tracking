@@ -10,5 +10,9 @@
     <string name="Register">Register</string>
     <string name="Save_Password">Save Password</string>
     <string name="Welcome">Welcome!</string>
+    <string name="title_activity_registe">RegisteActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register_ctivity">register_ctivity</string>
 
 </resources>

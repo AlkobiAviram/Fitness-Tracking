@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
@@ -110,14 +110,12 @@
         android:layout_height="30dp"
         android:id="@+id/editText4"
         android:inputType="number"
-        android:maxEms="3"
-        android:minEms="1"
         android:layout_marginTop="150dp"
         android:layout_below="@+id/textView"
         android:layout_toRightOf="@+id/textView2"
         android:background="#ffffff"
         android:maxLines="1"
-        android:maxLength="170" />
+        android:maxLength="3" />
 
 
     <TextView
