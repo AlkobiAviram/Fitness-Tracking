@@ -120,6 +120,64 @@
         android:maxLength="170" />
 
 
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="25dp"
+        android:text="Weight(kg):"
+        android:layout_marginTop="195dp"
+        android:id="@+id/textView6"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/editText5"
+        android:inputType="number"
+        android:layout_marginTop="195dp"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#ffffff"
+        android:maxLines="1"
+        android:maxLength="170" />
+
+
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="25dp"
+        android:text="Height(cm):"
+        android:layout_marginTop="240dp"
+        android:id="@+id/textView7"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/editText6"
+        android:inputType="number"
+        android:layout_marginTop="240dp"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#ffffff"
+        android:maxLines="1"
+        android:maxLength="170" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
