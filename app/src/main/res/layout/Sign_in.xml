@@ -18,7 +18,7 @@
         android:text="@string/User_Name"
         android:id="@+id/UserName"
         android:layout_marginTop="131dp"
-        android:layout_marginLeft="42dp"
+        android:layout_marginLeft="35dp"
         android:layout_marginStart="42dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -27,13 +27,15 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/Edit_UserName"
         android:background="#ffffff"
         android:minLines="1"
         android:maxLines="1"
-        android:minWidth="150dp"
+        android:minWidth="170dp"
+        android:layout_marginRight="40dp"
         android:layout_alignTop="@+id/UserName"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:text="@string/Enter_User_Name" />
 
 </RelativeLayout>

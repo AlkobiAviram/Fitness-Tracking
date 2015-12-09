@@ -3,5 +3,7 @@
 
 
     <string name="action_settings">Settings</string>
-    <string name="User_Name">User Name</string>
+    <string name="User_Name">User Name:</string>
+    <string name="Enter_User_Name">Enter User Name</string>
+
 </resources>
