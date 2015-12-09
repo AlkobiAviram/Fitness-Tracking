@@ -21,6 +21,7 @@
     <string name="confirmTerms">Confirm Terms</string>
     <string name="Gymnast">Gymnast</string>
     <string name="GymInstructor">Gym instructor</string>
+    <string name="registerTitle">Register</string>
 
 
 </resources>
