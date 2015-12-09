@@ -17,10 +17,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/User_Name"
         android:id="@+id/UserName"
-        android:layout_marginTop="131dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginStart="42dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/WelcomeText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -32,10 +30,76 @@
         android:minLines="1"
         android:maxLines="1"
         android:minWidth="170dp"
-        android:layout_marginRight="40dp"
+        android:text="@string/Enter_User_Name"
         android:layout_alignTop="@+id/UserName"
+        android:layout_alignRight="@+id/switch1"
+        android:layout_alignEnd="@+id/switch1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Password"
+        android:id="@+id/Password"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/UserName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="8"
+        android:id="@+id/Etid_Password"
+        android:layout_alignTop="@+id/Password"
+        android:layout_alignLeft="@+id/Edit_UserName"
+        android:layout_alignStart="@+id/Edit_UserName"
+        android:background="#ffffff"
+        android:maxLength="14" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Sign_in"
+        android:textSize="20dp"
+        android:id="@+id/Sign_in_button"
+        android:layout_below="@+id/switch1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:text="@string/Enter_User_Name" />
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:textSize="20dp"
+        android:id="@+id/Register_button"
+        android:layout_below="@+id/Sign_in_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Save_Password"
+        android:textSize="20dp"
+        android:id="@+id/switch1"
+        android:checked="true"
+        android:layout_below="@+id/Etid_Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Welcome"
+        android:id="@+id/WelcomeText"
+        android:layout_alignParentTop="true"
+        android:textSize="50dp"
+        android:layout_marginLeft="60dp"
+        android:textAlignment="center"
+        android:textColor="#080101" />
 
 </RelativeLayout>
