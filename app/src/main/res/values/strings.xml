@@ -12,15 +12,15 @@
     <string name="Save_Password">Save Password</string>
     <string name="Welcome">Welcome!</string>
 
-    <string name="registerTitle">Register</string>
     <string name="firstName">First Name:</string>
     <string name="lastName">Last Name:</string>
-    <string name="eMail">E-Mail:</string>
+    <string name="eMail">E-mail:</string>
     <string name="age">Age:</string>
     <string name="weight">Weight(kg):</string>
     <string name="height">Height(cm):</string>
     <string name="confirmTerms">Confirm Terms</string>
-    <string name="registerButton">Register</string>
+    <string name="Gymnast">Gymnast</string>
+    <string name="GymInstructor">Gym instructor</string>
 
 
 </resources>
