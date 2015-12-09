@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Fitness-Tracking</string>
 
-    <string name="hello_world">Hello world!</string>
+
     <string name="action_settings">Settings</string>
+    <string name="User_Name">User Name</string>
 </resources>
