@@ -21,6 +21,12 @@
     <string name="Gymnast">Gymnast</string>
     <string name="GymInstructor">Gym instructor</string>
     <string name="registerTitle">Register</string>
+    <string name="title_activity_mail_confirm">MailConfirm</string>
+    <string name="title_activity_exercises">ExercisesActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
 
 
 </resources>

@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_in);
 
-        Button SignInButton = (Button)findViewById(R.id.Register_button);
-        SignInButton.setOnClickListener(new View.OnClickListener() {
+        Button RegisterButton = (Button)findViewById(R.id.Register_button);
+        RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                     Intent intent = new Intent(MainActivity.this , RegisterActivity.class);
@@ -24,7 +24,18 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        Button SignInButton = (Button)findViewById(R.id.Sign_in_button);
+        SignInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ExercisesActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
