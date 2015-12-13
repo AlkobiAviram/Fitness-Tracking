@@ -1,46 +1,34 @@
 package com.games.aviramalkobi.fitness_tracking;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity {
+public class MyProfile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_my_profile);
 
-        Button RegisterButton = (Button)findViewById(R.id.Register_button);
-        RegisterButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this , Register.class);
-                    startActivity(intent);
-
-            }
-        });
-
-        Button SignInButton = (Button)findViewById(R.id.Sign_in_button);
+        Button SignInButton = (Button)findViewById(R.id.ExercisesButton);
         SignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MyProfile.class);
+                Intent intent = new Intent(MyProfile.this, Exercises.class);
                 startActivity(intent);
             }
         });
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_my_profile, menu);
         return true;
     }
 

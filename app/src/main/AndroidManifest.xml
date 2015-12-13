@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name=".Register"
             android:label="@string/registerTitle"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -31,12 +31,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ExercisesActivity"
-            android:label="@string/title_activity_exercises"
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_profile"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.games.aviramalkobi.fitness_tracking.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Exercises"
+            android:label="@string/title_activity_exercises"
+            android:parentActivityName=".MyProfile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.games.aviramalkobi.fitness_tracking.MyProfile" />
         </activity>
     </application>
 

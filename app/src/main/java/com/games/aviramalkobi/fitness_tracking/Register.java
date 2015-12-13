@@ -10,13 +10,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
-public class RegisterActivity extends AppCompatActivity {
+public class Register extends AppCompatActivity {
     private Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register_activity);
+        setContentView(R.layout.activity_register);
     }
 
     @Override

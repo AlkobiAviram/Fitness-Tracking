@@ -1,0 +1,153 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.games.aviramalkobi.fitness_tracking.Profile"
+    android:background="#bfd0ff"
+    android:weightSum="1">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aviram Alkobi"
+            android:textSize="30dp"
+            android:id="@+id/textView11"
+            android:layout_column="26" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercises"
+            android:id="@+id/ExercisesButton"
+            android:layout_column="30"
+            android:layout_marginLeft="10dp"
+            android:background="#8b99ff"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="350px"
+            android:layout_height="200dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/p1"
+            android:scaleType="centerCrop"
+            android:layout_column="26" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change photo"
+            android:id="@+id/changePhoto"
+            android:layout_column="30"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:background="#8b99ff"
+            android:minLines="2" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age :"
+            android:id="@+id/textView10"
+            android:layout_column="26"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText9"
+            android:layout_column="30"
+            android:text="26"
+            android:editable="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height :"
+            android:id="@+id/height"
+            android:layout_column="26"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText10"
+            android:layout_column="30"
+            android:text="175"
+            android:editable="false"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight :"
+            android:id="@+id/weight"
+            android:layout_column="26"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText11"
+            android:layout_column="30"
+            android:text="70"
+            android:editable="false"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:id="@+id/EditProfile"
+            android:layout_column="26"
+            android:background="#8b99ff" />
+    </TableRow>
+
+</TableLayout>
