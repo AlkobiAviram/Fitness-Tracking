@@ -23,6 +23,12 @@
             android:id="@+id/textView11"
             android:layout_column="26" />
 
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,7 +37,6 @@
             android:layout_column="30"
             android:layout_marginLeft="10dp"
             android:background="#8b99ff"/>
-
     </TableRow>
 
     <TableRow
