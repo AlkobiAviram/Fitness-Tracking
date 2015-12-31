@@ -22,7 +22,7 @@ public class NextRegister extends AppCompatActivity {
         setContentView(R.layout.activity_next_register);
 
         Intent intent = getIntent();
-        String mail = intent.getStringExtra(Register.emailKey);
+        final String mail = intent.getStringExtra(Register.emailKey);
 
         final TextView Age = (TextView)findViewById(R.id.Age);
         final TextView Height = (TextView)findViewById(R.id.height);
@@ -35,9 +35,10 @@ public class NextRegister extends AppCompatActivity {
             public void onClick(View v) {
                 dal = new DAL(v);
 
-                System.out.println("! befor get key");
+
+                System.out.println("! befor get key" + mail);
                 dal.getKey("WYymjpCIew");
-                System.out.println("! after get key");
+                System.out.println("! after get key" + mail);
 
                 final AlertDialog.Builder inputAlert = new AlertDialog.Builder(v.getContext());
                 inputAlert.setTitle("Please Confirm Your Register");

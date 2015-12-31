@@ -570,8 +570,6 @@
                         android:orientation="vertical"></LinearLayout>
 
 
-
-
                 </FrameLayout>
             </LinearLayout>
         </TabHost>

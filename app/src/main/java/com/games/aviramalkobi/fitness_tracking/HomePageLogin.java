@@ -26,6 +26,7 @@ public class HomePageLogin extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomePageLogin.this,Profile.class);
                 startActivity(intent);
+
             }
         });
 
