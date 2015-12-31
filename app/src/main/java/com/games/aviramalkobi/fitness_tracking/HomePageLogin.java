@@ -8,31 +8,37 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity {
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+
+public class HomePageLogin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+        Parse.initialize(this, "JsFEGYXdtCqMlgTLN23H2IlYlycKEDirbdKjKEfY", "NBmDPpoWRw8DmJ9u7Za57BJcUNpjejMlWv0uW88r");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
 
-        Button RegisterButton = (Button)findViewById(R.id.Register_button);
-        RegisterButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this , Register.class);
-                    startActivity(intent);
-
-            }
-        });
-
-        Button SignInButton = (Button)findViewById(R.id.Sign_in_button);
+        Button SignInButton = (Button)findViewById(R.id.buttonLogin);
         SignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MyProfile.class);
+                Intent intent = new Intent(HomePageLogin.this,Profile.class);
                 startActivity(intent);
             }
         });
+
+
+        Button RegisterButton = (Button)findViewById(R.id.buttonRegister);
+        RegisterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePageLogin.this,Register.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
@@ -44,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -57,5 +63,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }

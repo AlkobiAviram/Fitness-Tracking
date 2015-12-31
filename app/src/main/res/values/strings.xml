@@ -1,4 +1,3 @@
-
 <resources>
     <string name="app_name">Fitness-Tracking</string>
 
@@ -24,9 +23,16 @@
     <string name="title_activity_mail_confirm">MailConfirm</string>
     <string name="title_activity_exercises">ExercisesActivity</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_my_profile">MyProfile</string>
 
+    <string name="title_activity_chest_one">ChestOneActivity</string>
+    <string name="title_activity_show_exercises">ShowExercisesActivity</string>
+
+
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_next_register">NextRegister</string>
+    <string name="title_activity_profile">Profile</string>
+
+    <string name="hello_world">Hello world!</string>
 
 
 

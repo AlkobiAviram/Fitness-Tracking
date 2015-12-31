@@ -1,52 +1,65 @@
 package com.games.aviramalkobi.fitness_tracking;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+
 
 public class Register extends AppCompatActivity {
-    private Context context = this;
+
+    DAL dal;
+    public static final String emailKey = "get Email please";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+
+        final TextView Email = (TextView)findViewById(R.id.Email);
+        final TextView FullName = (TextView)findViewById(R.id.FullName);
+        final TextView Password = (TextView)findViewById(R.id.Password);
+
+
+        Button ButtonNext = (Button)findViewById(R.id.buttonNext);
+        ButtonNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Register.this, NextRegister.class);
+                intent.putExtra(emailKey , Email.getText().toString() );
+                startActivity(intent);
+
+
+
+            }
+        });
+
+
+        Button ButtonBack = (Button)findViewById(R.id.buttonBack);
+        ButtonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Register.this, HomePageLogin.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_register_ctivity, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
-        public void registerClicked(View v) {
-            final AlertDialog.Builder inputAlert = new AlertDialog.Builder(context);
-            inputAlert.setTitle("Please Confirm Your Register");
-            inputAlert.setMessage("A message send to your email please enter the confirm code");
-            final EditText userInput = new EditText(context);
-            inputAlert.setView(userInput);
-            inputAlert.setPositiveButton("Submit", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    String userInputValue = userInput.getText().toString();
-                }
-            });
-            inputAlert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
-            AlertDialog alertDialog = inputAlert.create();
-            alertDialog.show();
-        }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -61,5 +74,5 @@ public class Register extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }

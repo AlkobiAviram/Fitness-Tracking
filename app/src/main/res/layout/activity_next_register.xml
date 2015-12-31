@@ -5,14 +5,14 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#8cccfa"
+
     >
     <LinearLayout
 
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="#8cccfa"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -35,10 +35,9 @@
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:gravity="right"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal" >
 
 
             </LinearLayout>
@@ -51,7 +50,9 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="30dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:textColor="#000000"
+            >
 
             <ImageView android:layout_width="200dp"
                 android:layout_height="80dp"
@@ -61,65 +62,81 @@
 
             <EditText android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:hint="Full Name"
+                android:hint="Height (cm)"
                 android:background="#f3f3f3"
                 android:paddingLeft="5dp"
                 android:layout_marginTop="30dp"
                 android:textColor="#000000"
                 android:textColorHint="#000"
-                android:id="@+id/FullName"
+                android:id="@+id/Height"
                 android:text="1" />
             <EditText android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:hint="E-mail"
+                android:hint="Weight (kg)"
                 android:background="#f3f3f3"
                 android:paddingLeft="5dp"
                 android:layout_marginTop="20dp"
                 android:textColor="#000000"
                 android:textColorHint="#000"
-                android:id="@+id/Email"
+                android:id="@+id/Weight"
                 android:text="1" />
             <EditText android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:hint="copy E-mail"
+                android:hint="Age"
                 android:background="#f3f3f3"
                 android:paddingLeft="5dp"
                 android:layout_marginTop="20dp"
                 android:textColor="#000000"
                 android:textColorHint="#000"
-                android:id="@+id/Email2" />
-            <EditText android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:hint="password"
-                android:background="#f3f3f3"
-                android:paddingLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:textColor="#000000"
-                android:textColorHint="#000"
-                android:id="@+id/Password"
+                android:id="@+id/Age"
                 android:text="1" />
-            <EditText android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:hint="copy password"
-                android:background="#f3f3f3"
-                android:paddingLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:textColor="#000000"
-                android:textColorHint="#000"
-                android:id="@+id/password2" />
 
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/editText4"
+                android:layout_marginTop="5dp"
+                android:layout_alignRight="@+id/editText4"
+                android:layout_alignEnd="@+id/editText4">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gymnast"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/radioButton"
+                    android:textColor="#000"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GymInstructor"
+                    android:id="@+id/radioButton2"
+                    android:textColor="#000"/>
+            </RadioGroup>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="15dp"
+                android:text="confirmTerms"
+                android:id="@+id/checkBox"
+                android:textColor="#000000"
+                android:checked="false" />
 
 
             <Button android:layout_width="190dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="25dp"
                 android:text="NEXT"
                 android:textColor="#000"
                 android:background="#2683c2"
-                android:id="@+id/buttonNext"
-                />
+                android:id="@+id/buttonNext2" />
 
             <Button android:layout_width="190dp"
                 android:layout_height="38dp"
@@ -128,18 +145,7 @@
                 android:text="Back"
                 android:textColor="#000"
                 android:background="#eb543b"
-                android:id="@+id/buttonBack" />
-
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-
-            >
-
-
-
+                android:id="@+id/buttonBack2" />
 
         </LinearLayout>
 
