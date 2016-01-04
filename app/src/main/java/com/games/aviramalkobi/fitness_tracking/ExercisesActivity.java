@@ -3,8 +3,6 @@ package com.games.aviramalkobi.fitness_tracking;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TabHost;
@@ -54,7 +52,7 @@ public class ExercisesActivity extends AppCompatActivity {
         tabHost.addTab(tabSpec);
 
         tabSpec = tabHost.newTabSpec("Abs");
-        tabSpec.setContent(R.id.Abs);
+        tabSpec.setContent(R.id.ABS);
         tabSpec.setIndicator("Abs");
         tabHost.addTab(tabSpec);
 
