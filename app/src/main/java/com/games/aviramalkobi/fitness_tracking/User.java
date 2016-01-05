@@ -17,6 +17,8 @@ public class User extends ParseObject {
     private int Weight;
     //private ProgramWorkout programWorkout;
 
+
+
     // constructor A
     public User(String fullName, String password, String email, int age, int height, int weight){
         this.FullName = fullName;

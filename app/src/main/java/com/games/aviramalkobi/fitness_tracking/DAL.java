@@ -20,7 +20,6 @@ public class DAL {
     private static final int MIN_AGE = 14;
     private static final int MAX_AGE = 90;
     private ParseObject DB;
-    private AppEntryTimeDBHelper helper ;
 
 
     public DAL(View view){
