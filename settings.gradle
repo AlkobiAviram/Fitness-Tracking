@@ -1,1 +1,1 @@
-include ':bolts-tasks-1.3.0-javadoc', ':app'
+include ':bolts-tasks-1.3.0-javadoc', ':app', ':mail'

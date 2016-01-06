@@ -28,8 +28,8 @@ public class DAL {
     }
 
 
-    // add User to DB
-    public void addUser(String Email , String Password , String FullName , int Age , int Height ){
+    // add User to DB  (good !)
+    public void addUser(String Email , String Password , String FullName , int Age , int Height , int Weight ){
 
         DB = new ParseObject(Tables.UserTable.TABLE_NAME);
 
@@ -37,54 +37,30 @@ public class DAL {
         DB.put(Tables.UserTable.EMAIL, Email );         // TODO : check if the address is exist
         DB.put(Tables.UserTable.PASSWORD, Password);    // TODO : check password length
         DB.put(Tables.UserTable.FULL_NAME, FullName);   // TODO : not too long
-        if (Age > MIN_AGE && Age < MAX_AGE)
-            DB.put(Tables.UserTable.AGE, Age);
-        else {
-            //TODO : error message
-        }
+        DB.put(Tables.UserTable.AGE, Age);
         DB.put(Tables.UserTable.HEIGHT, Height);       // TODO : only number and not mor 3 digits
-        //DB.put(Tables.UserTable.WEIGHT, Weight);        // TODO : only number and not mor 3 digits
+        DB.put(Tables.UserTable.WEIGHT, Weight);        // TODO : only number and not mor 3 digits
 
         //save the values
         DB.saveInBackground();
 
     }
 
-    // add user to DB
-    public void addUser(String Email , String Password , String FullName){
 
-        DB = new ParseObject(Tables.UserTable.TABLE_NAME);
-
-       /* if (thereIsRow(Email) ){
-            upDateEntryTime(Email , FullName , Password);
-        }*/
-
-        // if element not exist then add element
-        //else {
-        // add to table
-        DB.put(Tables.UserTable.EMAIL, Email );
-        DB.put(Tables.UserTable.PASSWORD, Password);
-        DB.put(Tables.UserTable.FULL_NAME, FullName);
-
-        //save the values
-        DB.saveInBackground();
-        //}
-    }
-
-
+    // for testes
     public String getKey(String email){
 
         DB = new ParseObject(Tables.UserTable.TABLE_NAME);
 
         // Value input to search field
-        final String searchInput = "10";
+        //final String searchInput = "9";
 
 
         // Initiate ParseQuery
         final ParseQuery<User> query = ParseQuery.getQuery(Tables.UserTable.TABLE_NAME);
 
         // Look for the username that was typed into the search field
-        query.whereEqualTo(Tables.UserTable.EMAIL, searchInput);
+        query.whereEqualTo(Tables.UserTable.EMAIL, email);
 
         //System.out.println("! in");
 
@@ -93,16 +69,17 @@ public class DAL {
             public void done(List<User> users, ParseException e) {
                 if (e == null) {
 
-
-                    // The query was successful.
-                    System.out.println("!! ok");
                     try {
-
-                        System.out.println();
+                        users.get(0).setAge(7);
+                        users.get(0).setHeight(5);
+                        users.get(0).setWeight(6);
+                        System.out.println("Sise = " + users.size());
+                        // The query was successful.
+                        System.out.println("!! ok");
 
                     }
                     catch (IndexOutOfBoundsException ex){
-                        System.out.println(users.size());
+                        System.out.println( "DAL - get id not ok ");
                     }
 
                             /*ParseUser user = objects.get(0);
@@ -121,14 +98,16 @@ public class DAL {
     }
 
 
-    // upDate DB
+    // upDate DB (good)
     public void upDateUser(String key , String Email, String Password ,String FullName){
 
         ParseObject point = ParseObject.createWithoutData(Tables.UserTable.TABLE_NAME, key);
 
-
         // Set a new value on quantity
-        point.put(Tables.UserTable.EMAIL, "10");
+        point.put(Tables.UserTable.EMAIL, Email);
+        point.put(Tables.UserTable.PASSWORD, Password);
+        point.put(Tables.UserTable.FULL_NAME, FullName);
+
 
         System.out.println("in update user !");
         // Save

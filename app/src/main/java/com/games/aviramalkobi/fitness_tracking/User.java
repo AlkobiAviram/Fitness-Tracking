@@ -77,6 +77,7 @@ public class User extends ParseObject {
     public void setWeight(int weight){
         if(weight < Integer.MAX_VALUE)
             put(Tables.UserTable.WEIGHT , weight);
+
     }
     public int getWeight(){
         return getInt(Tables.UserTable.WEIGHT);

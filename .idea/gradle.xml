@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bolts-tasks-1.3.0-javadoc" />
+            <option value="$PROJECT_DIR$/mail" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -1,17 +1,21 @@
 package com.games.aviramalkobi.fitness_tracking;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
-
 import com.parse.Parse;
 import com.parse.ParseInstallation;
 
+
+
+
 public class HomePageLogin extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,7 @@ public class HomePageLogin extends AppCompatActivity {
         Parse.initialize(this, "JsFEGYXdtCqMlgTLN23H2IlYlycKEDirbdKjKEfY", "NBmDPpoWRw8DmJ9u7Za57BJcUNpjejMlWv0uW88r");
         ParseInstallation.getCurrentInstallation().saveInBackground();
 
+        
         Button SignInButton = (Button)findViewById(R.id.buttonLogin);
         SignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
