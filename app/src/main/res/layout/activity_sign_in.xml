@@ -69,7 +69,8 @@
                 android:textColor="#000000"
                 android:paddingLeft="5dp"
                 android:layout_marginTop="30dp"
-                android:textColorLink="#000000" />
+                android:textColorLink="#000000"
+                android:id="@+id/signInEmail" />
 
             <EditText
 
@@ -82,7 +83,7 @@
                 android:background="#f3f3f3"
                 android:paddingLeft="5dp"
                 android:layout_marginTop="30dp"
-                />
+                android:id="@+id/signInPassword" />
 
 
             <LinearLayout

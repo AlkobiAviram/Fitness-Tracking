@@ -7,13 +7,24 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.parse.LogInCallback;
 import com.parse.Parse;
+import com.parse.ParseException;
 import com.parse.ParseInstallation;
-
-
+import com.parse.ParseUser;
 
 
 public class HomePageLogin extends AppCompatActivity {
+
+    private Button SignInButton;
+    private Button RegisterButton;
+    private TextView Email;
+    private TextView Password;
+
+    private boolean errorSignIn = false;
 
 
 
@@ -25,18 +36,55 @@ public class HomePageLogin extends AppCompatActivity {
         ParseInstallation.getCurrentInstallation().saveInBackground();
 
         
-        Button SignInButton = (Button)findViewById(R.id.buttonLogin);
+        SignInButton = (Button)findViewById(R.id.buttonLogin);
+        RegisterButton = (Button)findViewById(R.id.buttonRegister);
+        Email = (TextView)findViewById(R.id.signInEmail);
+        Password = (TextView)findViewById(R.id.signInPassword);
+
+
         SignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePageLogin.this,Profile.class);
-                startActivity(intent);
+                errorSignIn = false;
 
+                // testes for email address
+                String stringTest = Email.getText().toString();
+                if(stringTest.isEmpty()){
+                    errorSignIn = true;
+                    Email.setError("please enter email");
+                }
+                else if( !(android.util.Patterns.EMAIL_ADDRESS.matcher(stringTest).matches()) ){
+                    errorSignIn = true;
+                    Email.setError("email address is incorrect");
+                }
+
+                // testes for Password
+                stringTest = Password.getText().toString();
+                if(stringTest.isEmpty()){
+                    errorSignIn = true;
+                    Password.setError("please enter password");
+                }
+                //ParseUser parseUser = new ParseUser(Tables.UserTable.TABLE_NAME);
+
+                ParseUser.logInInBackground(Email.getText().toString(), Password.getText().toString(), new LogInCallback() {
+                    @Override
+                    public void done(ParseUser user, ParseException e) {
+                        if (e == null){
+                            Intent intent = new Intent(HomePageLogin.this,Profile.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
+                        }
+                        else{
+                            Toast.makeText(HomePageLogin.this , "user not exist please registering" , Toast.LENGTH_SHORT ).show();
+                        }
+
+                    }
+                });
             }
         });
 
 
-        Button RegisterButton = (Button)findViewById(R.id.buttonRegister);
+
         RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

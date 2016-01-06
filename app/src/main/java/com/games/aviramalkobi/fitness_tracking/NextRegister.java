@@ -144,6 +144,9 @@ public class NextRegister extends AppCompatActivity {
                     AlertDialog alertDialog = inputAlert.create();
                     alertDialog.show();
                 }
+                else{
+
+                }
 
             }
         });
