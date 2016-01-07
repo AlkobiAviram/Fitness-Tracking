@@ -35,6 +35,12 @@ public class Profile extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Profile.this,HomePageLogin.class);
+        startActivity(intent);
+    }
+
     /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

@@ -14,7 +14,9 @@ import com.parse.LogInCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseInstallation;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
 
 public class HomePageLogin extends AppCompatActivity {
@@ -23,6 +25,7 @@ public class HomePageLogin extends AppCompatActivity {
     private Button RegisterButton;
     private TextView Email;
     private TextView Password;
+    private static boolean connectToParse = false ;
 
     private boolean errorSignIn = false;
 
@@ -32,10 +35,14 @@ public class HomePageLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-        Parse.initialize(this, "JsFEGYXdtCqMlgTLN23H2IlYlycKEDirbdKjKEfY", "NBmDPpoWRw8DmJ9u7Za57BJcUNpjejMlWv0uW88r");
-        ParseInstallation.getCurrentInstallation().saveInBackground();
 
-        
+        if (!connectToParse){
+            Parse.initialize(this, "6KZ1YtNX6suqBrNVYOhImz4Q6RyzkusH3pf2JGtL", "6efWZSUIdWz9dLkT2PUMsQK9jnH40v1rmg9oqIWS");
+            ParseInstallation.getCurrentInstallation().saveInBackground();
+            connectToParse = true ;
+        }
+
+
         SignInButton = (Button)findViewById(R.id.buttonLogin);
         RegisterButton = (Button)findViewById(R.id.buttonRegister);
         Email = (TextView)findViewById(R.id.signInEmail);
@@ -49,33 +56,31 @@ public class HomePageLogin extends AppCompatActivity {
 
                 // testes for email address
                 String stringTest = Email.getText().toString();
-                if(stringTest.isEmpty()){
+                if (stringTest.isEmpty()) {
                     errorSignIn = true;
                     Email.setError("please enter email");
-                }
-                else if( !(android.util.Patterns.EMAIL_ADDRESS.matcher(stringTest).matches()) ){
+                } else if (!(android.util.Patterns.EMAIL_ADDRESS.matcher(stringTest).matches())) {
                     errorSignIn = true;
                     Email.setError("email address is incorrect");
                 }
 
                 // testes for Password
                 stringTest = Password.getText().toString();
-                if(stringTest.isEmpty()){
+                if (stringTest.isEmpty()) {
                     errorSignIn = true;
                     Password.setError("please enter password");
                 }
-                //ParseUser parseUser = new ParseUser(Tables.UserTable.TABLE_NAME);
+
 
                 ParseUser.logInInBackground(Email.getText().toString(), Password.getText().toString(), new LogInCallback() {
                     @Override
                     public void done(ParseUser user, ParseException e) {
-                        if (e == null){
-                            Intent intent = new Intent(HomePageLogin.this,Profile.class);
+                        if (user != null) {
+                            Intent intent = new Intent(HomePageLogin.this, Profile.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
-                        }
-                        else{
-                            Toast.makeText(HomePageLogin.this , "user not exist please registering" , Toast.LENGTH_SHORT ).show();
+                        } else {
+                            Toast.makeText(HomePageLogin.this, "this user is not exist please registering", Toast.LENGTH_SHORT).show();
                         }
 
                     }
@@ -88,7 +93,7 @@ public class HomePageLogin extends AppCompatActivity {
         RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePageLogin.this,Register.class);
+                Intent intent = new Intent(HomePageLogin.this, Register.class);
                 startActivity(intent);
             }
         });

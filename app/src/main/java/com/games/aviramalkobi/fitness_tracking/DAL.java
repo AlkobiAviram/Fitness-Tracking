@@ -7,7 +7,9 @@ import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 import com.parse.SaveCallback;
+import com.parse.SignUpCallback;
 
 import java.util.List;
 
@@ -19,38 +21,24 @@ public class DAL {
 
     private static final int MIN_AGE = 14;
     private static final int MAX_AGE = 90;
-    private ParseObject DB;
+    private ParseUser userDB;
+
 
 
     public DAL(View view){
         // connect to DB
 
-    }
-
-
-    // add User to DB  (good !)
-    public void addUser(String Email , String Password , String FullName , int Age , int Height , int Weight ){
-
-        DB = new ParseObject(Tables.UserTable.TABLE_NAME);
-
-        // add to table
-        DB.put(Tables.UserTable.EMAIL, Email );         // TODO : check if the address is exist
-        DB.put(Tables.UserTable.PASSWORD, Password);    // TODO : check password length
-        DB.put(Tables.UserTable.FULL_NAME, FullName);   // TODO : not too long
-        DB.put(Tables.UserTable.AGE, Age);
-        DB.put(Tables.UserTable.HEIGHT, Height);       // TODO : only number and not mor 3 digits
-        DB.put(Tables.UserTable.WEIGHT, Weight);        // TODO : only number and not mor 3 digits
-
-        //save the values
-        DB.saveInBackground();
 
     }
+
+
+
 
 
     // for testes
     public String getKey(String email){
 
-        DB = new ParseObject(Tables.UserTable.TABLE_NAME);
+        //DB = new ParseObject(Tables.UserTable.TABLE_NAME);
 
         // Value input to search field
         //final String searchInput = "9";
