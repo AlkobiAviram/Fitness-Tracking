@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TabHost;
-import android.widget.Toast;
 
 public class ExercisesActivity extends AppCompatActivity {
     public static int chestPicturesNum = 28;
@@ -57,28 +56,9 @@ public class ExercisesActivity extends AppCompatActivity {
         tabHost.addTab(tabSpec);
 
         Button ShowMeChest[] = new Button[chestPicturesNum];
-        for (int i = 0; i<ShowMeChest.length; i++) {
-
-            String mDrawableName = "SMC"+(i+1);
-            final int resID = getResources().getIdentifier(mDrawableName, "id", getPackageName());
-            ShowMeChest[i]=(Button) findViewById(resID);
-            ShowMeChest[i].setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String s[],s2[];
-                    Intent intent = new Intent(ExercisesActivity.this, ShowExercisesActivity.class);
-                    String s1=  v.getResources().getResourceName(resID);
-                    s = s1.split("/");
-                    s2 = s[s.length-1].split("C");
-                    Toast toast = Toast.makeText(getApplicationContext(), s2[s2.length-1], Toast.LENGTH_SHORT);
-                    toast.show();
-                    intent.putExtra(Exercises_Name_Key, "chest" + s2[s2.length - 1]);
-                    startActivity(intent);
-
-                }
-            });
-        }
-
+        setAnimation(ShowMeChest,"SMC","chest","C");
+        Button ShowMeBack[] = new Button[4];
+        setAnimation(ShowMeBack,"SMB","back","B");
 
 
     }
@@ -106,8 +86,29 @@ public class ExercisesActivity extends AppCompatActivity {
     }*/
 
 
+    public void setAnimation(Button ShowMeExercises[], String ShowMeExercisesStr, final String muscleName,final String splitKey ){
 
+        for (int i = 0; i<ShowMeExercises.length; i++) {
 
+            String mDrawableName = ShowMeExercisesStr+(i+1);
+            final int resID = getResources().getIdentifier(mDrawableName, "id", getPackageName());
+            ShowMeExercises[i]=(Button) findViewById(resID);
+            ShowMeExercises[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String s[],s2[];
+                    Intent intent = new Intent(ExercisesActivity.this, ShowExercisesActivity.class);
+                    String s1=  v.getResources().getResourceName(resID);
+                    s = s1.split("/");
+                    s2 = s[s.length-1].split(splitKey);
+                    intent.putExtra(Exercises_Name_Key, muscleName + s2[s2.length - 1]);
+                    startActivity(intent);
+
+                }
+            });
+        }
+
+    }
 
 
 
