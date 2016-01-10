@@ -17,9 +17,9 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
 
-        Button MyEx = (Button)findViewById(R.id.MyExercises);
+        Button MyExercises = (Button)findViewById(R.id.ButtonExercises);
 
-        MyEx.setOnClickListener(new View.OnClickListener() {
+        MyExercises.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Profile.this,ExercisesActivity.class);
@@ -29,19 +29,20 @@ public class Profile extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Profile.this,HomePageLogin.class);
+        startActivity(intent);
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_my_profile, menu);
         return true;
     }
 
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(Profile.this,HomePageLogin.class);
-        startActivity(intent);
-    }
 
-    /*@Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -49,10 +50,13 @@ public class Profile extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.settings) {
+            Intent intent = new Intent(Profile.this,SettingsActivity.class);
+            startActivity(intent);
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
-    }*/
+    }
 }

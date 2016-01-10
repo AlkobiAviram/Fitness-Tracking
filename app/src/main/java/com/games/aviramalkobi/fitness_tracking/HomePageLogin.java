@@ -23,7 +23,7 @@ public class HomePageLogin extends AppCompatActivity {
 
     private Button SignInButton;
     private Button RegisterButton;
-    private TextView Email;
+    private TextView UserName;
     private TextView Password;
     private static boolean connectToParse = false ;
 
@@ -45,7 +45,7 @@ public class HomePageLogin extends AppCompatActivity {
 
         SignInButton = (Button)findViewById(R.id.buttonLogin);
         RegisterButton = (Button)findViewById(R.id.buttonRegister);
-        Email = (TextView)findViewById(R.id.signInEmail);
+        UserName = (TextView)findViewById(R.id.signInEmail);
         Password = (TextView)findViewById(R.id.signInPassword);
 
 
@@ -55,14 +55,12 @@ public class HomePageLogin extends AppCompatActivity {
                 errorSignIn = false;
 
                 // testes for email address
-                String stringTest = Email.getText().toString();
+                String stringTest = UserName.getText().toString();
                 if (stringTest.isEmpty()) {
                     errorSignIn = true;
-                    Email.setError("please enter email");
-                } else if (!(android.util.Patterns.EMAIL_ADDRESS.matcher(stringTest).matches())) {
-                    errorSignIn = true;
-                    Email.setError("email address is incorrect");
+                    UserName.setError("please enter User Name");
                 }
+
 
                 // testes for Password
                 stringTest = Password.getText().toString();
@@ -72,7 +70,7 @@ public class HomePageLogin extends AppCompatActivity {
                 }
 
 
-                ParseUser.logInInBackground(Email.getText().toString(), Password.getText().toString(), new LogInCallback() {
+                ParseUser.logInInBackground(UserName.getText().toString(), Password.getText().toString(), new LogInCallback() {
                     @Override
                     public void done(ParseUser user, ParseException e) {
                         if (user != null) {
@@ -80,7 +78,7 @@ public class HomePageLogin extends AppCompatActivity {
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
                         } else {
-                            Toast.makeText(HomePageLogin.this, "this user is not exist please registering", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(HomePageLogin.this, "User not exist please registering", Toast.LENGTH_SHORT).show();
                         }
 
                     }
@@ -102,12 +100,12 @@ public class HomePageLogin extends AppCompatActivity {
     }
 
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-    }
+    }*/
 
    /* @Override
     public boolean onOptionsItemSelected(MenuItem item) {

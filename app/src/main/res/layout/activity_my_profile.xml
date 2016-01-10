@@ -14,36 +14,7 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:background="#8cccfa"
-            android:weightSum="1"
-            >
 
-
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="My Profile"
-                android:textColor="#000"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:background="#ff0e0f"
-                android:textColorLink="#000" />
-
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="My Exercises"
-                android:textColor="#000"
-                android:background="#fef9ff"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                />
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -80,41 +51,45 @@
 
         </LinearLayout>
 
-        <TableLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TableRow
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Age :"
-                    android:id="@+id/textView10"
+                    android:id="@+id/Age"
                     android:layout_column="26"
                     android:textSize="20dp"
                     android:textColor="#000"
                     android:layout_marginLeft="25dp"
-                    android:textStyle="bold"
-
-                    />
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText9"
-                    android:layout_column="33"
+                    android:id="@+id/editText16"
+                    android:layout_column="27"
                     android:text="26"
                     android:editable="false"
                     android:textColor="#000"
-                    android:layout_marginLeft="30dp"/>
-            </TableRow>
+                    android:layout_marginLeft="55dp"
+                    android:layout_span="20"
+                    />
 
-            <TableRow
+
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="50dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -129,26 +104,21 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText10"
-                    android:layout_column="33"
+                    android:id="@+id/editText15"
+                    android:layout_column="27"
                     android:text="175"
                     android:editable="false"
                     android:textColor="#000"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:layout_span="20" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:layout_column="60"
-                    android:layout_marginLeft="60dp"
-                    android:id="@+id/MyExercises" />
-            </TableRow>
 
-            <TableRow
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="100dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -161,7 +131,7 @@
                     android:textStyle="bold"/>
 
                 <EditText
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText11"
                     android:layout_column="27"
@@ -170,9 +140,9 @@
                     android:textColor="#000"
                     android:layout_marginLeft="30dp"
                     android:layout_span="20" />
-            </TableRow>
+            </LinearLayout>
 
-        </TableLayout>
+        </RelativeLayout>
 
 
 
@@ -180,16 +150,16 @@
             android:layout_height="38dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dp"
-            android:text="Edit"
+            android:text="Exercises"
             android:textColor="#000"
             android:background="#2683c2"
-            android:id="@+id/buttonEdit"
+            android:id="@+id/ButtonExercises"
             android:textStyle="bold"/>
 
 
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="326dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"
