@@ -9,6 +9,7 @@ import android.widget.TabHost;
 
 public class ExercisesActivity extends AppCompatActivity {
     public static int chestPicturesNum = 28;
+    public static int backPicturesNum = 20;
     public static final String Exercises_Name_Key = "";
 
     @Override
@@ -57,7 +58,7 @@ public class ExercisesActivity extends AppCompatActivity {
 
         Button ShowMeChest[] = new Button[chestPicturesNum];
         setAnimation(ShowMeChest,"SMC","chest","C");
-        Button ShowMeBack[] = new Button[4];
+        Button ShowMeBack[] = new Button[backPicturesNum];
         setAnimation(ShowMeBack,"SMB","back","B");
 
 
