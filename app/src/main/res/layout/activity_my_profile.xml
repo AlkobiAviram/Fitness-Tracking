@@ -73,7 +73,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText16"
+                    android:id="@+id/editAge"
                     android:layout_column="27"
                     android:text="26"
                     android:editable="false"
@@ -104,7 +104,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText15"
+                    android:id="@+id/editHeight"
                     android:layout_column="27"
                     android:text="175"
                     android:editable="false"
@@ -133,7 +133,7 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText11"
+                    android:id="@+id/editWeight"
                     android:layout_column="27"
                     android:text="70"
                     android:editable="false"
