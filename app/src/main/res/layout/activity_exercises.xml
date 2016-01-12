@@ -273,7 +273,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Universal Machine Press"
+                            android:text="UM Press"
                             android:layout_marginTop="540dp"
                             android:textSize="20dp"
                             />
@@ -408,7 +408,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Low Incline Barbell Press"
+                            android:text="Low Incline Barbell"
                             android:layout_marginTop="860dp"
                             android:textSize="20dp"
                             />
@@ -425,7 +425,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Low Incline Barbell press"
+                            android:text="Low Incline Barbell"
                             android:layout_marginTop="900dp"
                             android:textSize="20dp"
                             />
@@ -475,7 +475,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Upward Cable Crossovers"
+                            android:text="Upward Cable Cross"
                             android:layout_marginTop="1020dp"
                             android:textSize="20dp"
                             />
@@ -877,7 +877,7 @@
                             android:text="Info"
                             />
 
-              
+
                     </RelativeLayout>
                 </ScrollView>
 
@@ -894,7 +894,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flat Barbell Press"
+                            android:text="Seated Dumbbell Press"
                             android:layout_marginTop="20dp"
                             android:textSize="20dp"
                             />
@@ -912,7 +912,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flat Smith Press"
+                            android:text="Standing Dumbbell"
                             android:layout_marginTop="60dp"
                             android:textSize="20dp"
                             />
@@ -929,7 +929,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flat Dumbbell Press"
+                            android:text="Seated Front Barbell"
                             android:layout_marginTop="100dp"
                             android:textSize="20dp"
                             />
@@ -946,7 +946,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bench Dips"
+                            android:text="Seated Rear Barbell"
                             android:layout_marginTop="140dp"
                             android:textSize="20dp"
                             />
@@ -963,7 +963,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cable Crossovers"
+                            android:text="Seated Front SM Press"
                             android:layout_marginTop="180dp"
                             android:textSize="20dp"
                             />
@@ -980,7 +980,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dumbbell Pullovers"
+                            android:text="Seated Rear SM Press"
                             android:layout_marginTop="220dp"
                             android:textSize="20dp"
                             />
@@ -997,7 +997,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Barbell Press"
+                            android:text="Seated UM Press"
                             android:layout_marginTop="260dp"
                             android:textSize="20dp"
                             />
@@ -1014,7 +1014,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Dumbbell Flyes"
+                            android:text="Seated UM Press"
                             android:layout_marginTop="300dp"
                             android:textSize="20dp"
                             />
@@ -1031,7 +1031,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Dumbbell Press"
+                            android:text="Dumbbell Side Raises"
                             android:layout_marginTop="340dp"
                             android:textSize="20dp"
                             />
@@ -1048,7 +1048,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Cable Side Raises"
                             android:layout_marginTop="380dp"
                             android:textSize="20dp"
                             />
@@ -1065,7 +1065,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="One Arm Side Raises"
                             android:layout_marginTop="420dp"
                             android:textSize="20dp"
                             />
@@ -1082,7 +1082,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Dumbbell Front Raises"
                             android:layout_marginTop="460dp"
                             android:textSize="20dp"
                             />
@@ -1099,7 +1099,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Barbell Front Raises"
                             android:layout_marginTop="500dp"
                             android:textSize="20dp"
                             />
@@ -1116,7 +1116,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Lying Barbell Raises"
                             android:layout_marginTop="540dp"
                             android:textSize="20dp"
                             />
@@ -1133,7 +1133,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Cable Front Raises"
                             android:layout_marginTop="580dp"
                             android:textSize="20dp"
                             />
@@ -1150,7 +1150,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Wide Grip Upright Rows"
                             android:layout_marginTop="620dp"
                             android:textSize="20dp"
                             />
@@ -1166,7 +1166,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Wide Grip SM Upright"
                             android:layout_marginTop="660dp"
                             android:textSize="20dp"
                             />
@@ -1183,7 +1183,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Standing Dumbbell Rear"
                             android:layout_marginTop="700dp"
                             android:textSize="20dp"
                             />
@@ -1200,7 +1200,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Seated Dumbbell Rear"
                             android:layout_marginTop="740dp"
                             android:textSize="20dp"
                             />
@@ -1217,7 +1217,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Reverse Pec Deck"
                             android:layout_marginTop="780dp"
                             android:textSize="20dp"
                             />
@@ -1234,7 +1234,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Seated Front Barbell"
                             android:layout_marginTop="820dp"
                             android:textSize="20dp"
                             />
@@ -1251,7 +1251,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Dumbbell Side Raises"
                             android:layout_marginTop="860dp"
                             android:textSize="20dp"
                             />
@@ -1268,7 +1268,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Wide Grip Cable Upright"
                             android:layout_marginTop="900dp"
                             android:textSize="20dp"
                             />
@@ -1285,7 +1285,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Incline Dumbbell Raises"
                             android:layout_marginTop="940dp"
                             android:textSize="20dp"
                             />
@@ -1302,7 +1302,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Standing Barbell Press"
                             android:layout_marginTop="980dp"
                             android:textSize="20dp"
                             />
@@ -1318,7 +1318,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Clean and Press"
                             android:layout_marginTop="1020dp"
                             android:textSize="20dp"
                             />
@@ -1335,7 +1335,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Dumbbell Lateral Throw"
                             android:layout_marginTop="1060dp"
                             android:textSize="20dp"
                             />
@@ -1352,7 +1352,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Dumbbell Press"
                             android:layout_marginTop="1100dp"
                             android:textSize="20dp"
                             />
@@ -1365,6 +1365,41 @@
                             android:layout_marginTop="1090dp"
                             android:text="Info"
                             />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seated Dumbbell Raises"
+                            android:layout_marginTop="1140dp"
+                            android:textSize="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/SMS29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="245dp"
+                            android:layout_marginTop="1130dp"
+                            android:text="Info"
+                            />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seated Dumbbell Press"
+                            android:layout_marginTop="1180dp"
+                            android:textSize="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/SMS30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="245dp"
+                            android:layout_marginTop="1170dp"
+                            android:text="Info"
+                            />
+
                     </RelativeLayout>
                 </ScrollView>
 

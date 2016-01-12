@@ -11,8 +11,8 @@
 
 
     <SurfaceView
-        android:layout_width="900px"
-        android:layout_height="900px"
+        android:layout_width="1200px"
+        android:layout_height="1200px"
         android:id="@+id/surfaceView"
         android:layout_marginLeft="90dp"
          />
