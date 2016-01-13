@@ -32,8 +32,7 @@ public class DAL {
     }
 
 
-
-
+    
 
     // for testes
     public String getKey(String email){
@@ -85,53 +84,24 @@ public class DAL {
         return "ok";
     }
 
-
     // upDate DB (good)
     public void upDateUser(String key , String Email, String Password ,String FullName){
-
-        ParseObject point = ParseObject.createWithoutData(Tables.UserTable.TABLE_NAME, key);
-
-        // Set a new value on quantity
-        point.put(Tables.UserTable.EMAIL, Email);
-        point.put(Tables.UserTable.PASSWORD, Password);
-        point.put(Tables.UserTable.FULL_NAME, FullName);
-
-
         System.out.println("in update user !");
-        // Save
-        point.saveInBackground(new SaveCallback() {
+
+        ParseUser user = ParseUser.getCurrentUser();
+        user.put(Tables.UserTable.EMAIL, Email);
+        user.put(Tables.UserTable.PASSWORD, Password);
+        user.put(Tables.UserTable.FULL_NAME, FullName);
+        user.saveInBackground(new SaveCallback() {
             public void done(ParseException e) {
-                if (e == null) {
-                    System.out.println(" update user !");
-                    // Saved successfully.
+                if (e != null) {
+                    // Saved successfully
                 } else {
-                    // The save failed.
+                    // ParseException
                 }
             }
         });
 
-       /* ParseQuery query = new ParseQuery(Tables.UserTable.TABLE_NAME);
-        query.findInBackground(new FindCallback() {
-            @Override
-            public void done(List objects, ParseException e) {
-
-            }
-
-
-        });*/
-
-        // New value for one column
-        ContentValues values = new ContentValues();
-        values.put(Tables.UserTable.EMAIL, Email );
-        values.put(Tables.UserTable.PASSWORD, Password );
-        values.put(Tables.UserTable.FULL_NAME, FullName );
-
-        // Which row to update, based on the ID
-       // String selection = Tables.UserTable.EMAIL + " = " + Tables.UserTable.EMAIL ;
-        //String[] selectionArgs = { String.valueOf(rowId) };
-
-
-       // int count = db.update(Tables.UserTable.TABLE_NAME, values, selection, null);
     }
 
 
