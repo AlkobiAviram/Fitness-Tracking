@@ -27,7 +27,7 @@ public class Profile extends AppCompatActivity {
 
         final Button AllExercises = (Button)findViewById(R.id.ButtonAllExercises);
         final Button MyExercises = (Button)findViewById(R.id.ButtonMyExercises);
-        Button Edit = (Button)findViewById(R.id.ButtonEdit);
+        //Button Edit = (Button)findViewById(R.id.ButtonEdit);
 
         final EditText Age = (EditText)findViewById(R.id.editAge);
         final EditText Height = (EditText)findViewById(R.id.editHeight);
@@ -115,6 +115,13 @@ public class Profile extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+        if (id == R.id.EditProfile) {
+
+            Intent intent = new Intent(Profile.this,EditProfile.class);
+            startActivity(intent);
+            return true;
+        }
+
 
 
         return super.onOptionsItemSelected(item);

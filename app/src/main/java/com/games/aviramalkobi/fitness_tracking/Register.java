@@ -1,15 +1,10 @@
 package com.games.aviramalkobi.fitness_tracking;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -17,7 +12,7 @@ public class Register extends AppCompatActivity {
 
 
     private TextView Email ;
-    private TextView FullName ;
+    private TextView userName;
     private TextView Password ;
     private TextView Email_2 ;
     private TextView Password_2;
@@ -26,8 +21,10 @@ public class Register extends AppCompatActivity {
     public static final String emailKey = "EmailKey";
     public static final String fullNameKey = "FullNameKey";
     public static final String passwordKey = "PasswordKey";
-    private final int MIN_FULL_NAME_LENGTH = 5 ;
+    private final int MIN_USER_NAME_LENGTH = 6 ;
+    private final int MAX_USER_NAME_LENGTH = 20 ;
     private final int MIN_PASSWORD_LENGTH = 6 ;
+    private final int MAX_PASSWORD_LENGTH = 20 ;
     private boolean errorRegister ;
 
     @Override
@@ -40,7 +37,7 @@ public class Register extends AppCompatActivity {
         Email_2 = (TextView)findViewById(R.id.Email2);
         Password = (TextView)findViewById(R.id.Password);
         Password_2 = (TextView)findViewById(R.id.Password2);
-        FullName = (TextView)findViewById(R.id.FullName);
+        userName = (TextView)findViewById(R.id.FullName);
 
 
 
@@ -49,16 +46,20 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 errorRegister = false ;
-                // testes for full name
-                String stringTest = FullName.getText().toString();
+                // testes for user name
+                String stringTest = userName.getText().toString();
                 if(stringTest.isEmpty()){
                     errorRegister = true;
-                    FullName.setError("please enter full name");
+                    userName.setError("please enter full name");
 
                 }
-                else if(stringTest.length() < MIN_FULL_NAME_LENGTH){
+                else if(stringTest.length() < MIN_USER_NAME_LENGTH){
                     errorRegister = true;
-                    FullName.setError("full name must be least " + MIN_FULL_NAME_LENGTH + " characters");
+                    userName.setError("full name must be least " + MIN_USER_NAME_LENGTH + " characters");
+                }
+                else if(stringTest.length() > MAX_USER_NAME_LENGTH){
+                    errorRegister = true;
+                    userName.setError("full name must be maximum " + MAX_USER_NAME_LENGTH + " characters");
                 }
 
                 // testes for email address
@@ -86,7 +87,7 @@ public class Register extends AppCompatActivity {
                 }
                 else if(stringTest.length() > MIN_PASSWORD_LENGTH){
                     errorRegister = true;
-                    FullName.setError("password name must be least " + MIN_PASSWORD_LENGTH + " characters");
+                    userName.setError("password name must be least " + MIN_PASSWORD_LENGTH + " characters");
                 }
                 else if( !(Password_2.getText().toString().equals(stringTest))){
                     errorRegister = true;
@@ -98,7 +99,7 @@ public class Register extends AppCompatActivity {
                 if(!errorRegister) {
                     Intent intent = new Intent(Register.this, NextRegister.class);
                     intent.putExtra(emailKey, Email.getText().toString());
-                    intent.putExtra(fullNameKey, FullName.getText().toString());
+                    intent.putExtra(fullNameKey, userName.getText().toString());
                     intent.putExtra(passwordKey, Password.getText().toString());
                     startActivity(intent);
                 }
