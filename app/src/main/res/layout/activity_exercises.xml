@@ -1887,6 +1887,74 @@
                             android:layout_marginTop="1090dp"
                             android:text="Info"
                             />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Decline Smith press"
+                            android:layout_marginTop="1140dp"
+                            android:textSize="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/SML29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="245dp"
+                            android:layout_marginTop="1130dp"
+                            android:text="Info"
+                            />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Decline Smith press"
+                            android:layout_marginTop="1180dp"
+                            android:textSize="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/SML30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="245dp"
+                            android:layout_marginTop="1170dp"
+                            android:text="Info"
+                            />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Decline Smith press"
+                            android:layout_marginTop="1220dp"
+                            android:textSize="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/SML31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="245dp"
+                            android:layout_marginTop="1210dp"
+                            android:text="Info"
+                            />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Decline Smith press"
+                            android:layout_marginTop="1260dp"
+                            android:textSize="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/SML32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="245dp"
+                            android:layout_marginTop="1250dp"
+                            android:text="Info"
+                            />
                     </RelativeLayout>
                 </ScrollView>
 
