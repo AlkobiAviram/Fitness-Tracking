@@ -32,7 +32,6 @@ public class DAL {
     }
 
 
-    
 
     // for testes
     public String getKey(String email){

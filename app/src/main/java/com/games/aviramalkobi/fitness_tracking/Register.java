@@ -85,9 +85,9 @@ public class Register extends AppCompatActivity {
                     errorRegister = true;
                     Password.setError("please enter password");
                 }
-                else if(stringTest.length() > MIN_PASSWORD_LENGTH){
+                else if(stringTest.length() > MIN_PASSWORD_LENGTH && stringTest.length() < MAX_PASSWORD_LENGTH){
                     errorRegister = true;
-                    userName.setError("password name must be least " + MIN_PASSWORD_LENGTH + " characters");
+                    Password.setError("password name must be between " + MIN_PASSWORD_LENGTH + "-" + MAX_PASSWORD_LENGTH + " characters");
                 }
                 else if( !(Password_2.getText().toString().equals(stringTest))){
                     errorRegister = true;
