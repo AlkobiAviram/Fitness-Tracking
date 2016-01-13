@@ -14,24 +14,40 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="50dp">
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/topLayout">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="308dp"
                 android:layout_height="wrap_content"
                 android:text="Aviram Alkobi"
                 android:textSize="40dp"
-                android:layout_marginLeft="25dp"
                 android:layout_marginTop="5dp"
-                android:textColor="#000"/>
+                android:textColor="#000"
+                android:id="@+id/userNameTittle"/>
+
+
+
 
         </LinearLayout>
 
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/ic_menu_edit"
+                android:layout_toRightOf="@+id/topLayout"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ButtonEdit" />
 
+        </RelativeLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -80,7 +96,7 @@
                     android:textColor="#000"
                     android:layout_marginLeft="55dp"
                     android:layout_span="20"
-                    />
+                    android:enabled="false" />
 
 
             </LinearLayout>
@@ -146,14 +162,24 @@
 
 
 
-        <Button android:layout_width="190dp"
+        <Button android:layout_width="250dp"
             android:layout_height="38dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dp"
-            android:text="Exercises"
+            android:text="All Exercises"
             android:textColor="#000"
             android:background="#2683c2"
-            android:id="@+id/ButtonExercises"
+            android:id="@+id/ButtonAllExercises"
+            android:textStyle="bold"/>
+
+        <Button android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="My Exercises"
+            android:textColor="#000"
+            android:background="@android:color/holo_red_light"
+            android:id="@+id/ButtonMyExercises"
             android:textStyle="bold"/>
 
 

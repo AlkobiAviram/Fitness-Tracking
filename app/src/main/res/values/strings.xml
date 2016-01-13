@@ -23,6 +23,9 @@
     <string name="title_activity_mail_confirm">MailConfirm</string>
     <string name="title_activity_exercises">ExercisesActivity</string>
 
+    <string name="title_all_exercises">All Exercises</string>
+    <string name="title_my_exercises">My Exercises</string>
+
 
     <string name="title_activity_chest_one">ChestOneActivity</string>
     <string name="title_activity_show_exercises">ShowExercisesActivity</string>

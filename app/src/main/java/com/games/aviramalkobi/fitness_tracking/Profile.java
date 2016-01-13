@@ -8,16 +8,54 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class Profile extends AppCompatActivity {
+
+    ArrayList<Exercise> MyExercisesList ;
+    ArrayList<Exercise> AllExercisesList ;
+
+    private static boolean inEditPosition = false ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
 
-        Button MyExercises = (Button)findViewById(R.id.ButtonExercises);
+        final Button AllExercises = (Button)findViewById(R.id.ButtonAllExercises);
+        final Button MyExercises = (Button)findViewById(R.id.ButtonMyExercises);
+        Button Edit = (Button)findViewById(R.id.ButtonEdit);
+
+        final EditText Age = (EditText)findViewById(R.id.editAge);
+        final EditText Height = (EditText)findViewById(R.id.editHeight);
+        final EditText Weight = (EditText)findViewById(R.id.editWeight);
+
+
+        AllExercises.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // save  button
+                if(inEditPosition) {
+                    // TODO ::  to SAVE CHANGES in DB !!
+
+                    Age.setEnabled(false);
+                    Height.setEnabled(false);
+                    Weight.setEnabled(false);
+
+                    inEditPosition = false;
+                    MyExercises.setVisibility(View.VISIBLE);
+                    AllExercises.setText("All Exercises");
+                }
+                // all Exercises Button
+                else {
+                    Intent intent = new Intent(Profile.this,ExercisesActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
 
         MyExercises.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,12 +64,34 @@ public class Profile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        /*Edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AllExercises.setText("Save");
+                MyExercises.setVisibility(View.INVISIBLE);
+                inEditPosition = true ;
+
+                Age.setEnabled(true);
+                Height.setEnabled(true);
+                Weight.setEnabled(true);
+            }
+        });*/
     }
+
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(Profile.this,HomePageLogin.class);
-        startActivity(intent);
+        if(inEditPosition){
+            inEditPosition = false ;
+            Intent intent = new Intent(Profile.this,Profile.class);
+            startActivity(intent);
+        }
+        else{
+            Intent intent = new Intent(Profile.this,HomePageLogin.class);
+            startActivity(intent);
+        }
+
     }
 
     @Override
