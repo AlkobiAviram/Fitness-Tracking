@@ -53,13 +53,9 @@ public class Register extends AppCompatActivity {
                     userName.setError("please enter full name");
 
                 }
-                else if(stringTest.length() < MIN_USER_NAME_LENGTH){
+                else if(stringTest.length() < MIN_USER_NAME_LENGTH || stringTest.length() > MAX_USER_NAME_LENGTH){
                     errorRegister = true;
-                    userName.setError("full name must be least " + MIN_USER_NAME_LENGTH + " characters");
-                }
-                else if(stringTest.length() > MAX_USER_NAME_LENGTH){
-                    errorRegister = true;
-                    userName.setError("full name must be maximum " + MAX_USER_NAME_LENGTH + " characters");
+                    userName.setError("full name must be between " + MIN_USER_NAME_LENGTH+"-"+ MAX_USER_NAME_LENGTH + " characters");
                 }
 
                 // testes for email address
@@ -85,7 +81,7 @@ public class Register extends AppCompatActivity {
                     errorRegister = true;
                     Password.setError("please enter password");
                 }
-                else if(stringTest.length() > MIN_PASSWORD_LENGTH && stringTest.length() < MAX_PASSWORD_LENGTH){
+                else if(stringTest.length() < MIN_PASSWORD_LENGTH || stringTest.length() > MAX_PASSWORD_LENGTH){
                     errorRegister = true;
                     Password.setError("password name must be between " + MIN_PASSWORD_LENGTH + "-" + MAX_PASSWORD_LENGTH + " characters");
                 }
