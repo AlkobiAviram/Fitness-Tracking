@@ -86,7 +86,7 @@
                 android:inputType="numberDecimal"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:hint="Age ()"
+                android:hint="Age"
                 android:background="#f3f3f3"
                 android:paddingLeft="5dp"
                 android:layout_marginTop="20dp"
@@ -124,9 +124,9 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="95dp"
+                android:layout_marginLeft="70dp"
                 android:layout_marginTop="15dp"
-                android:text="confirmTerms"
+                android:text="Confirm Terms"
                 android:id="@+id/checkBox"
                 android:textColor="#000000"
                 android:checked="false" />

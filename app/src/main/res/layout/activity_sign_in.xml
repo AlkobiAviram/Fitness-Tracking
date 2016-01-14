@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="48dp"
-            android:background="#13b586"
+            android:background="#e8e8e7"
             android:orientation="horizontal"
             android:layout_alignParentTop="true">
 
@@ -21,13 +21,13 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/ic_logo"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp" />
 
 
             <TextView android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
-                android:textColor="#ffffff"
+                android:textColor="#2582C5"
                 android:layout_marginLeft="25dp"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -40,6 +40,9 @@
                 android:layout_height="48dp"
                 android:gravity="right"
                 android:orientation="horizontal" >
+
+
+
             </LinearLayout>
         </LinearLayout>
 
@@ -92,8 +95,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center_horizontal"
-                >
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:id="@+id/forgot_password"
@@ -108,14 +110,21 @@
                     />
 
             </LinearLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Password"
+                android:layout_marginTop="15dp"/>
+
             <Button android:layout_width="190dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:text="Login"
-                android:textColor="#fff"
+                android:textColor="#000"
                 android:textSize="13dp"
-                android:background="#13b586"
+                android:background="#eb543b"
                 android:id="@+id/buttonLogin" />
 
 
@@ -125,19 +134,10 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:text="Register"
-                android:textColor="#fff"
+                android:textColor="#000"
                 android:textSize="13dp"
                 android:background="#2683c2"
                 android:id="@+id/buttonRegister" />
-
-            <Button android:layout_width="190dp"
-                android:layout_height="38dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:text="Login with google+"
-                android:textColor="#fff"
-                android:textSize="13dp"
-                android:background="#eb543b"/>
 
 
         </LinearLayout>
