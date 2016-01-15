@@ -20,7 +20,7 @@
             <ImageView android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/ic_logo"
+                android:background="@android:drawable/ic_secure"
                 android:layout_marginLeft="10dp" />
 
 
@@ -29,7 +29,7 @@
                 android:text="Login"
                 android:textColor="#2582C5"
                 android:layout_marginLeft="25dp"
-                android:textSize="18sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 android:layout_gravity="center_horizontal|center_vertical"/>
 
@@ -41,6 +41,14 @@
                 android:gravity="right"
                 android:orientation="horizontal" >
 
+
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:drawable/ic_menu_help"
+                    android:layout_marginRight="20dp"
+                    />
 
 
             </LinearLayout>
@@ -112,7 +120,7 @@
             </LinearLayout>
 
             <CheckBox
-                android:layout_width="wrap_content"
+                android:layout_width="145dp"
                 android:layout_height="wrap_content"
                 android:text="Save Password"
                 android:layout_marginTop="15dp"/>
