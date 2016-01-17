@@ -1,11 +1,17 @@
 package com.games.aviramalkobi.fitness_tracking;
 
 import android.content.Intent;
+import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.TabHost;
+
+import java.util.ArrayList;
 
 public class ExercisesActivity extends AppCompatActivity {
     public static int chestPicturesNum = 28;
@@ -15,10 +21,20 @@ public class ExercisesActivity extends AppCompatActivity {
     public static  int TricepsPicturesNum = 23;
     public static final String Exercises_Name_Key = "";
 
+    private android.widget.ListView ListView;
+    private ListAdapter listAdapter;
+    private ArrayList<Exercise> arrayList;
+    private  Exercise exercise;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercises);
+
+
+        // to list view !
+        /*ListView = (ListView) findViewById(R.id.item_list);
+        listAdapter = new ListAdapter(ExercisesActivity.this, arrayList);*/
 
         TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
 

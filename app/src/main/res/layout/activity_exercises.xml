@@ -30,6 +30,11 @@
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"></TabWidget>
             </HorizontalScrollView>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:drawable/ic_input_add"
+                android:layout_marginTop="5dp"/>
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
