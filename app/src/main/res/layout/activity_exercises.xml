@@ -1416,7 +1416,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flat Barbell Press"
+                            android:text="Barbell Hack Squats"
                             android:layout_marginTop="20dp"
                             android:textSize="20dp"
                             />
@@ -1434,7 +1434,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flat Smith Press"
+                            android:text="Barbell Front Squats"
                             android:layout_marginTop="60dp"
                             android:textSize="20dp"
                             />
@@ -1451,7 +1451,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flat Dumbbell Press"
+                            android:text="Barbell Lunges"
                             android:layout_marginTop="100dp"
                             android:textSize="20dp"
                             />
@@ -1468,7 +1468,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bench Dips"
+                            android:text="Barbell Squats"
                             android:layout_marginTop="140dp"
                             android:textSize="20dp"
                             />
@@ -1485,7 +1485,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cable Crossovers"
+                            android:text="Hack Squats"
                             android:layout_marginTop="180dp"
                             android:textSize="20dp"
                             />
@@ -1502,7 +1502,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dumbbell Pullovers"
+                            android:text="Leg Press"
                             android:layout_marginTop="220dp"
                             android:textSize="20dp"
                             />
@@ -1519,7 +1519,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Barbell Press"
+                            android:text="Box Squats"
                             android:layout_marginTop="260dp"
                             android:textSize="20dp"
                             />
@@ -1536,7 +1536,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Dumbbell Flyes"
+                            android:text="Bulgarian Squats"
                             android:layout_marginTop="300dp"
                             android:textSize="20dp"
                             />
@@ -1553,7 +1553,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Dumbbell Press"
+                            android:text="Calf Raises"
                             android:layout_marginTop="340dp"
                             android:textSize="20dp"
                             />
@@ -1570,7 +1570,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Standing Calf Raises"
                             android:layout_marginTop="380dp"
                             android:textSize="20dp"
                             />
@@ -1587,7 +1587,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Dumbbell Lunges"
                             android:layout_marginTop="420dp"
                             android:textSize="20dp"
                             />
@@ -1604,7 +1604,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Dumbbell Squats"
                             android:layout_marginTop="460dp"
                             android:textSize="20dp"
                             />
@@ -1621,7 +1621,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Dumbbell Step Ups"
                             android:layout_marginTop="500dp"
                             android:textSize="20dp"
                             />
@@ -1638,7 +1638,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Deadlifts"
                             android:layout_marginTop="540dp"
                             android:textSize="20dp"
                             />
@@ -1655,7 +1655,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Front Hack Squats"
                             android:layout_marginTop="580dp"
                             android:textSize="20dp"
                             />
@@ -1672,7 +1672,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Leg Curls"
                             android:layout_marginTop="620dp"
                             android:textSize="20dp"
                             />
@@ -1688,7 +1688,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Leg Extensions"
                             android:layout_marginTop="660dp"
                             android:textSize="20dp"
                             />
@@ -1705,7 +1705,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Hack Squats"
                             android:layout_marginTop="700dp"
                             android:textSize="20dp"
                             />
@@ -1722,7 +1722,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Leg Curls"
                             android:layout_marginTop="740dp"
                             android:textSize="20dp"
                             />
@@ -1739,7 +1739,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Leg Extensions"
                             android:layout_marginTop="780dp"
                             android:textSize="20dp"
                             />
@@ -1756,7 +1756,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Leg Press"
                             android:layout_marginTop="820dp"
                             android:textSize="20dp"
                             />
@@ -1773,7 +1773,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Sissy Squat Machine"
                             android:layout_marginTop="860dp"
                             android:textSize="20dp"
                             />
@@ -1790,7 +1790,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="SM Lunges"
                             android:layout_marginTop="900dp"
                             android:textSize="20dp"
                             />
@@ -1807,7 +1807,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="SM Squats"
                             android:layout_marginTop="940dp"
                             android:textSize="20dp"
                             />
@@ -1824,7 +1824,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="SM Bulgarian Squats"
                             android:layout_marginTop="980dp"
                             android:textSize="20dp"
                             />
@@ -1840,7 +1840,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Standing Leg Curl"
                             android:layout_marginTop="1020dp"
                             android:textSize="20dp"
                             />
@@ -1857,7 +1857,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Walking Starter Lunges"
                             android:layout_marginTop="1060dp"
                             android:textSize="20dp"
                             />
@@ -1874,7 +1874,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Stiff Leg Deadlifts"
                             android:layout_marginTop="1100dp"
                             android:textSize="20dp"
                             />
@@ -1891,7 +1891,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Trotter Leg Press"
                             android:layout_marginTop="1140dp"
                             android:textSize="20dp"
                             />
@@ -1908,7 +1908,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Universal Leg Curls"
                             android:layout_marginTop="1180dp"
                             android:textSize="20dp"
                             />
@@ -1925,7 +1925,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Leg Extensions"
                             android:layout_marginTop="1220dp"
                             android:textSize="20dp"
                             />
@@ -1942,7 +1942,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="UM Squats"
                             android:layout_marginTop="1260dp"
                             android:textSize="20dp"
                             />
