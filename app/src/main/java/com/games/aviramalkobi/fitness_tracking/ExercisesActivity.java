@@ -12,6 +12,7 @@ public class ExercisesActivity extends AppCompatActivity {
     public static int backPicturesNum = 20;
     public static int shouldersPicturesNum = 30;
     public static int legsPicturesNum = 32;
+    public static  int TricepsPicturesNum = 23;
     public static final String Exercises_Name_Key = "";
 
     @Override
@@ -70,6 +71,8 @@ public class ExercisesActivity extends AppCompatActivity {
         Button ShowMeLegs[] = new Button[legsPicturesNum];
         setAnimation(ShowMeLegs,"SML","legs","L");
 
+        Button ShowMeTriceps[] = new Button[TricepsPicturesNum];
+        setAnimation(ShowMeTriceps,"SMTr","triceps","r");
 
     }
 

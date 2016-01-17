@@ -1971,7 +1971,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flat Barbell Press"
+                            android:text="Bench Dips"
                             android:layout_marginTop="20dp"
                             android:textSize="20dp"
                             />
@@ -1989,7 +1989,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flat Smith Press"
+                            android:text="Underhand Pushdowns"
                             android:layout_marginTop="60dp"
                             android:textSize="20dp"
                             />
@@ -2006,7 +2006,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flat Dumbbell Press"
+                            android:text="Cable Skull Crushers"
                             android:layout_marginTop="100dp"
                             android:textSize="20dp"
                             />
@@ -2023,7 +2023,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bench Dips"
+                            android:text="Dumbbell Crossface"
                             android:layout_marginTop="140dp"
                             android:textSize="20dp"
                             />
@@ -2040,7 +2040,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cable Crossovers"
+                            android:text="Dumbbell Kickback"
                             android:layout_marginTop="180dp"
                             android:textSize="20dp"
                             />
@@ -2057,7 +2057,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dumbbell Pullovers"
+                            android:text="Overhead Extensions"
                             android:layout_marginTop="220dp"
                             android:textSize="20dp"
                             />
@@ -2074,7 +2074,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Barbell Press"
+                            android:text="Close Grip Decline"
                             android:layout_marginTop="260dp"
                             android:textSize="20dp"
                             />
@@ -2091,7 +2091,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Dumbbell Flyes"
+                            android:text="Skull Crushers"
                             android:layout_marginTop="300dp"
                             android:textSize="20dp"
                             />
@@ -2108,7 +2108,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Dumbbell Press"
+                            android:text="Dips"
                             android:layout_marginTop="340dp"
                             android:textSize="20dp"
                             />
@@ -2125,7 +2125,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Close Grip press"
                             android:layout_marginTop="380dp"
                             android:textSize="20dp"
                             />
@@ -2142,7 +2142,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Close Grip Press"
                             android:layout_marginTop="420dp"
                             android:textSize="20dp"
                             />
@@ -2159,7 +2159,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Close Grip SM Press"
                             android:layout_marginTop="460dp"
                             android:textSize="20dp"
                             />
@@ -2176,7 +2176,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="One Arm Cable Overhead"
                             android:layout_marginTop="500dp"
                             android:textSize="20dp"
                             />
@@ -2193,7 +2193,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Seated One Arm Overhead"
                             android:layout_marginTop="540dp"
                             android:textSize="20dp"
                             />
@@ -2210,7 +2210,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Cable Overhead Extensions"
                             android:layout_marginTop="580dp"
                             android:textSize="20dp"
                             />
@@ -2227,7 +2227,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Overhead Cable Extensions"
                             android:layout_marginTop="620dp"
                             android:textSize="20dp"
                             />
@@ -2243,7 +2243,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Cable Kickback"
                             android:layout_marginTop="660dp"
                             android:textSize="20dp"
                             />
@@ -2260,7 +2260,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Pushdowns on UM"
                             android:layout_marginTop="700dp"
                             android:textSize="20dp"
                             />
@@ -2277,7 +2277,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Push Ups"
                             android:layout_marginTop="740dp"
                             android:textSize="20dp"
                             />
@@ -2294,7 +2294,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Overhead Cable Extensions"
                             android:layout_marginTop="780dp"
                             android:textSize="20dp"
                             />
@@ -2311,7 +2311,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Overhead Extensions"
                             android:layout_marginTop="820dp"
                             android:textSize="20dp"
                             />
@@ -2328,7 +2328,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Skull Crushers"
                             android:layout_marginTop="860dp"
                             android:textSize="20dp"
                             />
@@ -2345,7 +2345,7 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
+                            android:text="Cable Kickback"
                             android:layout_marginTop="900dp"
                             android:textSize="20dp"
                             />
@@ -2358,91 +2358,7 @@
                             android:layout_marginTop="890dp"
                             android:text="Info"
                             />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="940dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMTr24"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="930dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="980dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMTr25"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="970dp"
-                            android:text="Info"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="1020dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMTr26"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="1010dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="1060dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMTr27"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="1050dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="1100dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMTr28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="1090dp"
-                            android:text="Info"
-                            />
-                    </RelativeLayout>
+            </RelativeLayout>
                 </ScrollView>
 
                 <ScrollView
