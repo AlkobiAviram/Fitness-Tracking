@@ -1,14 +1,11 @@
 package com.games.aviramalkobi.fitness_tracking;
 
 import android.content.Intent;
-import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.TabHost;
 
 import java.util.ArrayList;
@@ -18,7 +15,9 @@ public class ExercisesActivity extends AppCompatActivity {
     public static int backPicturesNum = 20;
     public static int shouldersPicturesNum = 30;
     public static int legsPicturesNum = 32;
-    public static  int TricepsPicturesNum = 23;
+    public static  int tricepsPicturesNum = 23;
+    public static  int bicepsPicturesNum = 15;
+    public static  int absPicturesNum = 16;
     public static final String Exercises_Name_Key = "";
 
     private android.widget.ListView ListView;
@@ -87,8 +86,14 @@ public class ExercisesActivity extends AppCompatActivity {
         Button ShowMeLegs[] = new Button[legsPicturesNum];
         setAnimation(ShowMeLegs,"SML","legs","L");
 
-        Button ShowMeTriceps[] = new Button[TricepsPicturesNum];
+        Button ShowMeTriceps[] = new Button[tricepsPicturesNum];
         setAnimation(ShowMeTriceps,"SMTr","triceps","r");
+
+        Button ShowMeBiceps[] = new Button[bicepsPicturesNum];
+        setAnimation(ShowMeBiceps,"SMBi","biceps","i");
+
+        Button ShowMeABS[] = new Button[absPicturesNum];
+        setAnimation(ShowMeABS,"SMA","abs","A");
 
     }
 

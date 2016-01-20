@@ -30,23 +30,11 @@
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"></TabWidget>
             </HorizontalScrollView>
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
             <Button
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@android:drawable/ic_input_add"
-                android:layout_marginTop="5dp"
-                android:id="@+id/buttonAdd"/>
-            <Button
-                android:layout_width="45dp"
-                android:layout_height="50dp"
-                android:background="@drawable/ic_remove"
-                android:layout_marginTop="5dp"
-                android:id="@+id/buttonRemove"
-                android:layout_marginLeft="60dp"/>
-            </RelativeLayout>
+                android:layout_marginTop="5dp"/>
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
@@ -540,6 +528,16 @@
                             android:text="Info"
                             />
 
+                        <Button
+                            android:id="@+id/AddChestExercises"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="1150dp"
+                            android:text="Add To My Exercises"
+                            android:lines="1"
+                            android:background="@android:color/holo_red_light" />
+
 
                     </RelativeLayout>
                 </ScrollView>
@@ -894,6 +892,15 @@
                             android:text="Info"
                             />
 
+                        <Button
+                            android:id="@+id/AddBackExercises"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="830dp"
+                            android:text="Add To My Exercises"
+                            android:lines="1"
+                            android:background="@android:color/holo_red_light" />
 
                     </RelativeLayout>
                 </ScrollView>
@@ -1416,6 +1423,16 @@
                             android:layout_marginTop="1170dp"
                             android:text="Info"
                             />
+
+                        <Button
+                            android:id="@+id/AddShouldersExercises"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="1230dp"
+                            android:text="Add To My Exercises"
+                            android:lines="1"
+                            android:background="@android:color/holo_red_light" />
 
                     </RelativeLayout>
                 </ScrollView>
@@ -1972,6 +1989,17 @@
                             android:layout_marginTop="1250dp"
                             android:text="Info"
                             />
+
+                        <Button
+                            android:id="@+id/AddLegsExercises"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="1310dp"
+                            android:text="Add To My Exercises"
+                            android:lines="1"
+                            android:background="@android:color/holo_red_light" />
+
                     </RelativeLayout>
                 </ScrollView>
 
@@ -2375,7 +2403,18 @@
                             android:layout_marginTop="890dp"
                             android:text="Info"
                             />
-            </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/AddTricepsExercises"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="950dp"
+                            android:text="Add To My Exercises"
+                            android:lines="1"
+                            android:background="@android:color/holo_red_light" />
+
+                    </RelativeLayout>
                 </ScrollView>
 
                 <ScrollView
@@ -2644,224 +2683,15 @@
                             android:text="Info"
                             />
 
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="620dp"
-                            android:textSize="20dp"
-                            />
-
                         <Button
-                            android:id="@+id/SMBi16"
+                            android:id="@+id/AddBicepsExercises"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="610dp"
-                            android:text="Info"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="660dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="650dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="700dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi18"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="690dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="740dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi19"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="730dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="780dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi20"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="770dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="820dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi21"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="810dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="860dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi22"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="850dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="900dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi23"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="890dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="940dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi24"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="930dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="980dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi25"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="970dp"
-                            android:text="Info"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="1020dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi26"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="1010dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="1060dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi27"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="1050dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="1100dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMBi28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="1090dp"
-                            android:text="Info"
-                            />
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="630dp"
+                            android:text="Add To My Exercises"
+                            android:lines="1"
+                            android:background="@android:color/holo_red_light" />
 
                     </RelativeLayout>
                 </ScrollView>
@@ -3148,209 +2978,17 @@
                             android:layout_marginTop="610dp"
                             android:text="Info"
                             />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="660dp"
-                            android:textSize="20dp"
-                            />
+
 
                         <Button
-                            android:id="@+id/SMA17"
+                            android:id="@+id/AddABSExercises"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="650dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="700dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA18"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="690dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="740dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA19"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="730dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="780dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA20"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="770dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="820dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA21"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="810dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="860dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA22"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="850dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="900dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA23"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="890dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="940dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA24"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="930dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="980dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA25"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="970dp"
-                            android:text="Info"
-                            />
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="1020dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA26"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="1010dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="1060dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA27"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="1050dp"
-                            android:text="Info"
-                            />
-
-                        <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Decline Smith press"
-                            android:layout_marginTop="1100dp"
-                            android:textSize="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/SMA28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="245dp"
-                            android:layout_marginTop="1090dp"
-                            android:text="Info"
-                            />
-
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="1150dp"
+                            android:text="Add To My Exercises"
+                            android:lines="1"
+                            android:background="@android:color/holo_red_light" />
 
                     </RelativeLayout>
                 </ScrollView>
