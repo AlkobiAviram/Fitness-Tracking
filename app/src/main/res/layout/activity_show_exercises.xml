@@ -10,7 +10,9 @@
 
 
 
-
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <SurfaceView
         android:layout_width="1200px"
         android:layout_height="1200px"
@@ -18,6 +20,17 @@
         android:layout_marginLeft="90dp"
          />
 
+    </RelativeLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#000000ff"
+        android:text="\n\t\t Description + Explanation...."
+        android:textColor="#5c4bff"
+        android:id="@+id/descriptionText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
