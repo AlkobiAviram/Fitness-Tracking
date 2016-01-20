@@ -110,7 +110,7 @@ public class Profile extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.settings) {
+        if (id == R.id.Settings) {
             Intent intent = new Intent(Profile.this,SettingsActivity.class);
             startActivity(intent);
             return true;
@@ -118,6 +118,11 @@ public class Profile extends AppCompatActivity {
         if (id == R.id.EditProfile) {
 
             Intent intent = new Intent(Profile.this,EditProfile.class);
+            startActivity(intent);
+            return true;
+        }
+        if (id == R.id.Logout) {
+            Intent intent = new Intent(Profile.this,HomePageLogin.class);
             startActivity(intent);
             return true;
         }
